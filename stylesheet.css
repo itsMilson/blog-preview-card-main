@@ -1,0 +1,90 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: hsl(47, 88%, 63%);
+  --text-color: hsl(0, 0%, 42%);
+  --primary-black: hsl(0, 0%, 7%);
+}
+
+body {
+  background: var(--background-color);
+  font-size: 16px;
+  font-family: "Figtree", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+}
+
+.container {
+  background: white;
+  width: 360px;
+  height: 475px;
+  padding: 1.2em;
+  border-radius: 1rem;
+  border: 1px solid black;
+  box-shadow: 10px 10px var(--primary-black);
+}
+
+.container a,
+.container a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container a:hover {
+  color: var(--background-color);
+}
+
+#blog-banner {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.container h4 {
+  color: var(--text-color);
+}
+
+.big-font {
+  font-weight: 800;
+}
+
+.low-font {
+  font-weight: 500;
+}
+
+#learning {
+  background: var(--background-color);
+  text-align: center;
+  padding-top: 5px;
+  width: 4.5rem;
+  height: 2em;
+  border-radius: 5px;
+}
+.attribution {
+  margin: 1.5em 0;
+}
+
+.user-name {
+  display: flex;
+  align-items: center;
+}
+
+.user-name span {
+  padding-left: 1rem;
+}
+
+#avatar-image {
+  width: 30px;
+}
+
+.alignment {
+  margin-bottom: 1rem;
+}
